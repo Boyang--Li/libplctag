@@ -233,7 +233,9 @@ if (UNIX)
                            test_special
                            toggle_bool
                            write_string
-                           tag_rw )
+                           tag_rw
+			   crbot_plc
+		 	)
 
     set ( example_PROG_UTIL utils_posix.c )
     set ( example_LIBRARIES plctag pthread )
