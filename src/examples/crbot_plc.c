@@ -18,7 +18,6 @@
  *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
  ***************************************************************************/
 
-
 #include <stdio.h>
 #include <stdbool.h>
 #include "../lib/libplctag.h"
@@ -31,6 +30,7 @@
 #define TAG_PATH_1 "protocol=ab-eip&gateway=169.254.49.99&path=1,0&cpu=compactlogix&elem_size=4&elem_count=1&name=INN&debug=1"
 #define TAG_PATH_2 "protocol=ab-eip&gateway=169.254.49.99&path=1,0&cpu=compactlogix&elem_size=4&elem_count=1&name=timer1.PRE&debug=1"
 #define TAG_PATH_3 "protocol=ab-eip&gateway=169.254.49.99&path=1,0&cpu=compactlogix&elem_size=4&elem_count=1&name=timer2.PRE&debug=1"
+//python tag_rw.py -t uint32 -p "protocol=ab-eip&gateway=169.254.49.99&path=1,0&cpu=compactlogix&elem_size=4&elem_count=1&name=INN&debug=1"
 
 int main()
 {
@@ -39,7 +39,7 @@ int main()
     int i = 0;
 
     bool val1_set = 0;
-    int val2_set = 4000;
+    int val2_set = 5000;
     int val3_set = 5000;
 
     /* create the tag */
